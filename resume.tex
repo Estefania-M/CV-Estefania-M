@@ -1,0 +1,159 @@
+\documentclass[%singlesided,
+               doublesided,
+               paper=a4,
+               fontsize=10pt
+              ]{my-resume}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set geometry
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength\highlightwidth{8cm}
+\setlength\headerheight{2.5cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\marginleft{1cm}
+\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\margintop{0.5cm}
+\setlength\marginbottom{1cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{fontspec}
+\setmainfont{Carlito}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COLORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\colorlet{highlightbarcolor}{lightgray}
+\colorlet{headerbarcolor}{darkgray}
+
+\colorlet{headerfontcolor}{white}
+\colorlet{accent}{awesome-red}
+\colorlet{heading}{black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% set document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\name{Estefanía Muñoz Miranda}
+\tagline{Estudiante de Ingeniería Civil en Computación, Universidad de Chile.}
+\photo[round]{foto.jpg}{\dimexpr \headerheight - \marginbottom}   % make photo exactly match the header with margintop/marginright/marginbottom as margin
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contacto}
+    \email{estefania.munoz.m@ug.uchile.cl}
+    \phone{+569 9688 8467}
+    \github{@Estefania-M}{https://github.com/Estefania-M}
+    \linkedin{Estefanía Muñoz Miranda}{https://www.linkedin.com/in/estefania-munoz-m/}
+    
+    \section{Habilidades Técnicas}
+    \skillsection{Lenguajes de Programación}
+    \begin{tabular}{r @{\hspace{0.5em}}l}
+        {} & \skillsection{{\hspace{0.5em} \footnotesize básico | intermedio| avanzado|}}\\
+        \bg{skilllabelcolour}{iconcolour}{python} & \barrule{0.5}{accent}{0.1} \\
+        \bg{skilllabelcolour}{iconcolour}{c} & \barrule{0.3}{accent}{0.3} \\
+        \bg{skilllabelcolour}{iconcolour}{java} & \barrule{0.15}{accent}{0.45} \\
+        \bg{skilllabelcolour}{iconcolour}{html, css} &  \barrule{0.4}{accent}{0.2}\\
+        \bg{skilllabelcolour}{iconcolour}{javascript} & \barrule{0.25}{accent}{0.35} \\
+        \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.2}{accent}{0.4} \\
+        \bg{skilllabelcolour}{iconcolour}{SQL} & \barrule{0.15}{accent}{0.45} \\
+    \end{tabular}
+
+    \skillsection{Herramientas de Software}
+    \simpleskill{Excel}{Intermedio}
+    (\footnotesize{fórmulas y funciones, filtros de búsqueda, gráficos de datos, importación datos csv, etc.}) \vspace{0.5em}\\
+    \simpleskill{\normalsize Jupyter Notebook}{Básico}
+    (\footnotesize{importación de paquetes, gráficos de datos, lectura de archivos, etc.})\vspace{0.5em}\\
+    \simpleskill{\normalsize Visual Studio Code}{Intermedio}
+    (\footnotesize{creación de archivos Python, HTML, C, entre otros, importación de paquetes, lectura de archivos, debugging, etc.})\vspace{0.5em}\\
+    \simpleskill{\normalsize IntelliJ}{Básico}
+    (\footnotesize{creación de archivos Java, importación de paquetes, etc.})\vspace{0.5em}\\
+    \simpleskill{\normalsize OpenGL}{Básico}
+    (\footnotesize{creación de figuras y objetos 2D y 3D, utilización de texturas y luces, etc.})\\
+
+    \skillsection{\normalsize Idiomas}
+    \simpleskill{\normalsize Español}{Nativo}
+    \simpleskill{\normalsize Inglés}{Básico}
+    \footnotesize(rindiendo curso de inglés en la Universidad)
+    
+    \section{Proyectos/publicaciones}
+    Mis proyectos se encuentran disponibles en  \href{https://github.com/Estefania-M}{GitHub:}\\
+    
+    \proyect{2022}{\textbf{Página web encargada de agregar viajes y solicitar encargos.} Documento en lenguaje HTML, CSS, JavaScript y Python, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile.}{https://anakena.dcc.uchile.cl/~cc500209/cgi-bin/Tarea2/cgi-bin/inicio.py} \\
+    
+    \proyect{2022}{\textbf{Modelamiento de una ciudad típica en OpenGL}. Documento en lenguaje Python, Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile.}{https://github.com/Estefania-M/Modelamiento-Ciudad} \\
+    
+    \proyect{2021}{\textbf{Las mujeres que sentaron las bases de la astrofísica}. Ensayo Monográfico, Programa Académico de Bachillerato, Universidad de Chile.}{https://github.com/Estefania-M/Monografia}
+    
+    %\simpleskill{AWS certified cloud practitioner}
+    %\simpleskill{AWS certified ML Specialist}
+    %\simpleskill{Databricks Lakehouse Platform}
+
+}
+\mainbar{
+    \section{Perfil Personal}
+    Estudiante de ingeniería en búsqueda de desarrollo personal y profesional. Con gran motivación de vivir experiencias nuevas, adquiriendo nuevos aprendizajes. Motivación por el trabajo bien hecho y eficaz. %editar
+    
+    %\section[\faGears]{Work history}
+
+    \section{Formación Académica}
+    \job{2020 - actual}
+        {Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
+        {Estudiante Ingeniería Civil en Computación.}
+        {}
+    
+    \job{Marzo 2019 - Enero 2021}
+        {Programa Académico de Bachillerato, Universidad de Chile}
+        {Licenciada del Programa Académico de Bachillerato}
+        {Grado de Bachiller con Mención en Ciencias Naturales y Exactas.}
+        
+    \job{2015 - 2018}
+        {Liceo Nacional Bicentenario de Excelencia Académica, San Bernardo}
+        {Licenciada en Educación Media}
+        {Científico Humanista, mención Matemático.}
+    
+    \section{Actividades Extracurriculares}
+    
+    \activities{2019 - actual}
+        {Universidad de Chile}
+        {Monitora en Unidad de Difusión para la Admisión de Pregrado (UDAP)}
+        {Realizar charlas institucionales, representar a la universidad y la unidad académica en ferias vocacionales. Apoyo en matrículas, participar de capacitaciones, etc.}
+    \activities{Enero 2019}
+        {Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile}
+        {Estudiante en Escuela de Verano (EdV)}
+        {Curso de Matemática IV de duración 1 mes, en donde se evaluaron contenidos principalmente de integrales y ecuaciones diferenciales ordinarias.}
+    \activities{2017 - 2018}
+        {Pontificia Universidad Católica}
+        {Estudiante en Taller de Razonamiento Matemático (TRM) Nivel 1 y 2}
+        {Clases una vez a la semana, con desafíos/ejercicios de problemas matemáticos de diferentes contenidos.}
+    \activities{Junio 2017}
+        {Universidad San Sebastián}
+        {Participante en “Triatlón de Matemáticas”}
+        {Campeonato matemático en donde los integrantes de cada grupo debían resolver desafíos matemáticos en un determinado tiempo.}
+        
+    \section{Cursos relevantes}
+    \coursesP{Desarrollo de Aplicaciones Web, Universidad de Chile.}{Primavera 2022}
+    \coursesP{Bases de Datos, Universidad de Chile.}{Primavera 2022}
+    \coursesO{Programación de Software de Sistemas, Universidad de Chile.}{Otoño 2022}
+    \coursesO{Modelamiento y Computación Gráfica para Ingenieros, Universidad de Chile.}{Otoño 2022}
+    \coursesO{Algoritmos y Estructuras de Datos, Universidad de Chile.}{Otoño 2021}
+    
+}
+\makebody
+\clearpage
+
+\end{document}
