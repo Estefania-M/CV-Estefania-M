@@ -1,0 +1,145 @@
+% Document class and font size
+\documentclass[a4paper, 10pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{fontawesome5}
+\usepackage{parskip}
+\usepackage[usenames]{color}
+\usepackage{hyperref} % For hyperlinks
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\LARGE ESTEFANÍA MUÑOZ MIRANDA}\\[5pt] % Name
+% Contact info
+\faPhone ~ +569 9688 8467 ~
+% EMAIL
+\faEnvelope  ~
+\href{mailto:estefania.munoz.m@ug.uchile.cl}{estefania.munoz.m@ug.uchile.cl}  ~
+% LINKEDIN
+\faLinkedin  ~
+\href{https://www.linkedin.com/in/estefania-munoz-m/}{estefania-munoz-m} ~
+% GITHUB
+\faGithub  ~
+\href{https://github.com/Estefania-M}{@Estefania-M} ~
+\end{center}
+
+\section*{RESUMEN}
+Estudiante de 4to año de Ingeniería Civil en Computación de la Universidad de Chile, en búsqueda de desarrollo personal y profesional. Experiencia en clases particulares y trabajos universitarios de desarrollo web, manejo de datos y desarrollo de algoritmos. Gran motivación por el trabajo bien hecho y eficaz, responsable, puntual, y de rápido aprendizaje.
+
+% Education Section
+\section*{EDUCACIÓN}
+\noindent
+\textbf{Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile} \hfill 2020 | actual\\ % University name and location
+Estudiante de Ingeniería Civil en Computación. 
+
+\noindent
+\textbf{Programa Académico de Bachillerato, Universidad de Chile} \hfill Marzo 2019 | Enero 2021\\ % University name and location
+Licenciada del Programa Académico de Bachillerato.\\
+Grado de Bachiller con Mención en Ciencias Naturales y Exactas.
+
+\noindent
+\textbf{Liceo Nacional Bicentenario de Excelencia Académica, San Bernardo} \hfill 2015 | 2018\\ % University name and location
+Licenciada en Educación Media Científico - Humanista, mención Matemática.
+
+%\section*{EDUCACIÓN}
+%\noindent
+%\textbf{University Name}, City, State \hfill Enrolled: Month Year | Expected: Month Year\\ % University name and location
+%Degree Name \hfill Overall GPA: X.XX | Major GPA X.XX\\ % Degree and GPA
+%Threads: Example and Example \hfill Credit standing: Honors % Additional info
+
+%COURSES SECTION
+\section*{CURSOS RELEVANTES}
+\noindent
+Ingeniería de Software, Universidad de Chile. \hfill Otoño 2023\\[2pt]
+Desarrollo de Aplicaciones Web, Universidad de Chile. \hfill Primavera 2022\\[2pt]
+Bases de Datos, Universidad de Chile. \hfill Primavera 2022\\[2pt]
+Programación de Software de Sistemas, Universidad de Chile. \hfill Otoño 2022\\[2pt]
+Modelamiento y Computación Gráfica para Ingenieros, Universidad de Chile. \hfill Otoño 2022\\[2pt]
+Algoritmos y Estructuras de Datos, Universidad de Chile. \hfill Otoño 2021
+
+% Skills Section
+\section*{HABILIDADES TÉCNICAS}
+\begin{itemize}
+    \item \textbf{Manejo intermedio de Lenguajes de Programación:} Python, C, JavaScript.
+    \item \textbf{Manejo básico de Lenguajes de Programación:} Java, SQL, R.
+    \item \textbf{Manejo intermedio de Tecnologías Web:} HTML, CSS.
+    \item \textbf{Manejo básico de Frameworks:} Django.
+    \item \textbf{Uso intermedio de Herramientas de Software:} Excel, Git, RStudio, Visual Studio Code, LaTeX.
+    \item \textbf{Uso básico de Herramientas de Software:}  Jupyter Notebook, OpenGL, IntelliJ.
+    \item \textbf{Manejo de Idiomas:}  Inglés (básico, rindiendo cursos en la Universidad), Español (Nativo).
+\end{itemize}
+
+% Projects Section
+\section*{PROYECTOS/PUBLICACIONES}
+\noindent
+\textbf{Página web con un sistema de reseñas de productos} \textcolor{blue}{\href{https://github.com/Estefania-M/Pagina-Web-Resenas}{\faLink}} \hfill Otoño 2023
+\begin{itemize}
+    \item Documento en lenguaje Python. Framework utilizada: Django. Basado en Model View Template (MVT). Uso de Git. El usuario puede añadir, editar, eliminar, ver y calificar reseñas dentro del sistema. Proyecto universitario.
+\end{itemize}
+\noindent
+\textbf{Página web para agregar viajes y solicitar encargos} \textcolor{blue}{\href{https://github.com/Estefania-M/Pagina-Web-Encargos-Viajes}{\faLink}} \hfill Primavera 2022
+\begin{itemize}
+    \item Documento en lenguaje JavaScript, HTML, CSS y Python. Trabajo realizado para curso de la Universidad de Chile.
+\end{itemize}
+
+\noindent
+\textbf{Modelamiento gráfico de una ciudad típica en OpenGL} \textcolor{blue}{\href{https://github.com/Estefania-M/Modelamiento-Ciudad}{\faLink}} \hfill Otoño 2022
+\begin{itemize}
+    \item Documento en lenguaje Python. Se utiliza OpenGL para modelar las diferentes figuras y texturas. Trabajo realizado para curso de la Universidad de Chile.
+\end{itemize}
+
+\noindent
+\textbf{Las mujeres que sentaron las bases
+de la astrofísica} \textcolor{blue}{\href{https://github.com/Estefania-M/Monografia}{\faLink}} \hfill Mayo 2020 - Enero 2021
+\begin{itemize}
+    \item Ensayo Monográfico para optar al del grado de Bachiller en el Programa Académico de Bachillerato, Universidad de Chile.
+\end{itemize}
+
+% Experience Section
+\section*{ACTIVIDADES EXTRACURRICULARES}
+\noindent
+\textbf{Clases Particulares} \hfill Región Metropolitana\\
+\textit{Tutora} \hfill Marzo 2023 - actual 
+\begin{itemize}
+    \item Planificación y realización de clases presenciales de contenidos matemáticos a estudiantes de enseñanza media.
+\end{itemize}
+
+\noindent
+\textbf{Unidad de Admisión y Registros Académicos} \hfill Universidad de Chile\\
+\textit{Monitora} \hfill 2019 - actual 
+\begin{itemize}
+    \item Realización de charlas institucionales, representar a la universidad y a la unidad académica en ferias vocacionales.
+    \item Apoyo en matrículas, participación de capacitaciones, realizar y recibir llamados telefónicos de postulantes.
+\end{itemize}
+
+\noindent
+\textbf{Escuela de Verano (EDV)} \hfill Facultad de Ciencias Físicas y Matemáticas, Universidad de Chile\\ 
+\textit{Estudiante} \hfill Enero 2019 
+\begin{itemize}
+    \item Curso de Matemática IV con duración de 1 mes. Evaluaciones de contenidos matemáticos, principalmente integrales y ecuaciones diferenciales ordinarias.
+\end{itemize}
+
+\textbf{Taller de Razonamiento Matemático (TRM) - Nivel 1 y 2} \hfill Pontificia Universidad Católica\\
+\textit{Estudiante} \hfill 2017 – 2018 
+\begin{itemize}
+    \item Clases presenciales una vez a la semana con realización de desafíos/ejercicios de problemas matemáticos de diferentes contenidos. 
+\end{itemize}
+
+% End document
+\end{document}
